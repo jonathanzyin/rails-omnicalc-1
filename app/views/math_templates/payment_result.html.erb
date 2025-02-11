@@ -1,0 +1,8 @@
+<h1>Monthly Payment Result</h1>
+
+<p>APR: <%= @formatted_apr %></p>
+<p>Number of Years: <%= @years %> years</p>
+<p>Principal: <%= @principal.to_fs(:currency) %></p>
+<p>Payment: <%= @formatted_payment %></p>
+
+<a href="/payment/new">Calculate another payment</a>
